@@ -197,3 +197,4 @@ TARGET_LD_SHIM_LIBS += \
     /system/bin/mediaserver|/system/lib/libstagefright_shim.so \
     /system/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
     /system/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so
+    /vendor/bin/gpsd|/vendor/lib/gpsd_shim.so
