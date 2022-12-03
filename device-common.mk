@@ -80,6 +80,12 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     libhwc2on1adapter
 
+# nits map 481 nits
+ifneq ($(TARGET_DEVICE), a3xelte, a5xelte, a7xelte, j7elte, on7xlte)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/displayconfig/481nits_config/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+endif
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
