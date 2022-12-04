@@ -181,6 +181,11 @@ PRODUCT_PACKAGES += \
     libstagefright_shim \
     libui_shim \
     libcutils_shim
+    
+# VNDK
+PRODUCT_PACKAGES += \
+    libuti32 \
+    android.hardware.wifi.supplicant-V1-ndk
 
 # TextClassifier
 PRODUCT_PACKAGES += \
