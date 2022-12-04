@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    keystore.exynos5 \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
@@ -186,14 +185,6 @@ PRODUCT_PACKAGES += \
     libuti32 \
     android.hardware.wifi.supplicant-V1-ndk
 
-# TextClassifier
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
-
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
@@ -207,8 +198,6 @@ PRODUCT_PACKAGES += \
     wifiloader \
     hostapd \
     wificond \
-    wifilogd \
-    wlutil \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
