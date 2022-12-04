@@ -23,10 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
-# HWC
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.latch_unsignaled=1
-
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
