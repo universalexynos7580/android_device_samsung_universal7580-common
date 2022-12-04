@@ -206,6 +206,6 @@ TARGET_HAS_MEMFD_BACKPORT := true
 # Shim
 TARGET_LD_SHIM_LIBS += \
     /system/bin/mediaserver|/system/lib/libstagefright_shim.so \
-    /system/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
-    /system/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so
+    /system/lib/libsec-ril.so|/vendor/lib/libcutils_shim_vendor.so \
+    /system/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim_vendor.so \
     /vendor/bin/gpsd|/vendor/lib/gpsd_shim.so
