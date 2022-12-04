@@ -32,6 +32,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=0
+    
+# Bpf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
 
 # Factory Reset Protection
 PRODUCT_PROPERTY_OVERRIDES += \
