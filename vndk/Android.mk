@@ -1,17 +1,6 @@
 LOCAL_PATH := prebuilts/vndk/v32/arm/arch-arm-armv7-a-neon/shared/vndk-sp
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libutils-v32
-LOCAL_SRC_FILES := libutils.so
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TARGET_ARCH := arm
-LOCAL_MODULE_PATH := $(TARGET_OUT_SYSTEM_SHARED_LIBRARIES)
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libuti32
 LOCAL_SRC_FILES := libutils.so
 LOCAL_MODULE_SUFFIX := .so
