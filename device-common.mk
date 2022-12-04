@@ -89,6 +89,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
     libhwc2on1adapter
+    
+# The target has no boot jars to check
+SKIP_BOOT_JARS_CHECK := true
 
 # nits map 481 nits
 ifneq ($(TARGET_DEVICE), a3xelte, a5xelte, a7xelte, j7elte, on7xlte)
