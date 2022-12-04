@@ -49,8 +49,7 @@ PRODUCT_PACKAGES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-impl \
-    android.hardware.configstore@1.0-service
+    android.hardware.configstore@1.1-service
 
 # DRM
 PRODUCT_PACKAGES += \
