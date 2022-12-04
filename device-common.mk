@@ -25,8 +25,9 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     tinymix \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy.conf \
