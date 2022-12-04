@@ -21,7 +21,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.universal7580 \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     tinymix \
