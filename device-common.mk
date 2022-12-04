@@ -178,7 +178,7 @@ PRODUCT_PACKAGES += \
     libexynoscamera_shim \
     libstagefright_shim \
     libui_shim \
-    libcutils_shim
+    libcutils_shim_vendor
     
 # VNDK
 PRODUCT_PACKAGES += \
