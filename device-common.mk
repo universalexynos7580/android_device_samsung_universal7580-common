@@ -216,7 +216,19 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
-    android.hardware.wifi@1.0-service.legacy
+    android.hardware.wifi@1.0-service
+
+#hostpad
+PRODUCT_PACKAGES += \
+    android.hardware.wifi.hostapd@1.0
+
+#wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.4
+
+#supplicant
+PRODUCT_PACKAGES += \
+    android.hardware.wifi.supplicant@1.3
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
