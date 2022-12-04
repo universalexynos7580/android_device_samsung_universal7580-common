@@ -16,6 +16,16 @@
 
 LOCAL_PATH := device/samsung/universal7580-common
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+     hardware/samsung \
+     hardware/ril \
+     hardware/lineage/compat \
+     hardware/samsung_slsi/exynos \
+     hardware/samsung_slsi/exynos5 \
+     hardware/samsung_slsi/exynos7580
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Audio
