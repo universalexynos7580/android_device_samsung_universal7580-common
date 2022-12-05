@@ -1,0 +1,2 @@
+
+allow profman mediaserver_exec:file read;

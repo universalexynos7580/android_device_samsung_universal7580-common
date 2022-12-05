@@ -1,0 +1,4 @@
+allow fsck_untrusted sysfs:file read;
+allow fsck_untrusted sysfs:file open;
+allow fsck_untrusted sysfs:file getattr;
+

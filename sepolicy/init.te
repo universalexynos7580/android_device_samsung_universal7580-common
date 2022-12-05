@@ -66,7 +66,7 @@ allow init sswap_device:blk_file write;
 allow init sysfs_sswap:file { open write };
 
 # Block device sysfs
-allow init sysfs_block:file rw_file_perms;
+# allow init sysfs_block:file rw_file_perms;
 
 # Audio Jack
 allow init sysfs_jack:file setattr;
@@ -93,6 +93,8 @@ allow init proc_reset_reason:file { rw_file_perms setattr };
 allow init proc_vm:file rw_file_perms;
 allow init proc_simslot_count:file rw_file_perms;
 allow init proc_sec:file { rw_file_perms setattr };
+allow init proc:file setattr;
+
 
 # Sockets
 allow init socket_device:sock_file { read write getattr setattr create unlink };

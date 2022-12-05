@@ -59,3 +59,9 @@ unix_socket_connect(system_server, property, gpsd)
 get_prop(system_server, exported_camera_prop);
 get_prop(system_server, userspace_reboot_exported_prop);
 get_prop(system_server, userspace_reboot_config_prop);
+
+# zygote
+allow system_server app_zygote:process getpgid;
+
+# proc
+allow system_server proc_dt_firmware:dir search;

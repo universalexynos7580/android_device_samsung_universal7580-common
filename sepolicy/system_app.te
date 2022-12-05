@@ -2,3 +2,18 @@ allow system_app sysfs_mdnie:{ file lnk_file } rw_file_perms;
 allow system_app sysfs_mdnie:dir search;
 allow system_app sysfs_graphics:dir search;
 allow system_app wificond:binder call;
+allow system_app sysfs_zram:dir search;
+allow system_app proc_pagetypeinfo:file open;
+allow system_app sysfs_zram:file read;
+allow system_app proc_pagetypeinfo:file getattr;
+allow system_app sysfs_zram:file open;
+allow system_app sysfs_zram:file getattr;
+
+allow system_app hal_light_default:binder call;
+allow system_app mediaserver_exec:file { getattr read };
+allow system_app proc_pagetypeinfo:file { open read };
+
+# Allow theme_prop to be read and set by Settings
+get_prop(system_app, theme_prop)
+set_prop(system_app, theme_prop)
+
