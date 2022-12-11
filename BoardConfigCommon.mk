@@ -81,7 +81,8 @@ TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-proton
 TARGET_LINUX_KERNEL_VERSION := 3.10
 
 # Kernel config
