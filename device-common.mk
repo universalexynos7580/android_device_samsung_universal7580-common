@@ -236,6 +236,9 @@ PRODUCT_PACKAGES += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# clang-r450784d missing ld executable (needed to build kernel)
+$(shell cp -r device/samsung/universal7580-common/configs/clang/ld prebuilts/clang/host/linux-x86/clang-r450784d/bin)
+
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi/exynos7580/exynos7580.mk)
