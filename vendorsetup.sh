@@ -24,13 +24,13 @@ rm -rf hardware/lineage/interfaces/camera/device && git clone https://github.com
 echo ""
 
 # inputflinger dispatcher
-echo "inputflinger dispatcher"
-rm -rf frameworks/native/services/inputflinger/dispatcher && git clone https://github.com/universalexynos7580/android_frameworks_native_services_inputflinger_dispatcher.git -b lineage-20 frameworks/native/services/inputflinger/dispatcher
+# echo "inputflinger dispatcher"
+# rm -rf frameworks/native/services/inputflinger/dispatcher && git clone https://github.com/universalexynos7580/android_frameworks_native_services_inputflinger_dispatcher.git -b lineage-20 frameworks/native/services/inputflinger/dispatcher
 
 echo ""
 
 # lineage vendor
-echo "vendor lineage"
-rm -rf vendor/lineage && git clone https://github.com/universalexynos7580/android_vendor_lineage.git -b lineage-20.0 vendor/lineage
+# echo "vendor lineage"
+# rm -rf vendor/lineage && git clone https://github.com/universalexynos7580/android_vendor_lineage.git -b lineage-20.0 vendor/lineage
 
 echo ""
