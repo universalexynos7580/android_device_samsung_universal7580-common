@@ -1,0 +1,4 @@
+hidl_package_root {
+    name: "vendor.universal7580",
+    path: "device/samsung/universal7580-common/hidl",
+}
