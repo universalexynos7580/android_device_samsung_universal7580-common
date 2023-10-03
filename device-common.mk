@@ -200,7 +200,6 @@ PRODUCT_PACKAGES += \
     
 # VNDK
 PRODUCT_PACKAGES += \
-    libuti32 \
     android.hardware.wifi.supplicant-V1-ndk
 
 # Trust HAL
