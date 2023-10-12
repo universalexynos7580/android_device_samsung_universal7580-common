@@ -94,7 +94,7 @@ PRODUCT_PACKAGES += \
 SKIP_BOOT_JARS_CHECK := true
 
 # nits map 481 nits
-ifneq ($(TARGET_DEVICE), a3xelte, a5xelte, a7xelte, j7elte, on7xlte)
+ifeq ($(TARGET_DEVICE), a3xelte, a5xelte, a7xelte, j7elte, on7xlte)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/481nits_config/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
 endif
